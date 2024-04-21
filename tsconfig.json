@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "types": ["node", "vite/client"],
+    /* 这意味着 TypeScript 将把你的代码编译成符合 ES2020 标准的 JavaScript。*/
+    "target": "ES2020",
+    /* 这个选项启用了对 ECMAScript 公共类字段的支持，确保类字段的行为与最新的 JavaScript 标准一致 */
+    "useDefineForClassFields": true,
+    /* 指定生成哪个模块系统代码。ESNext 表示最新的模块功能，如动态导入等。*/
+    "module": "ESNext",
+    /* 这些库文件被包含在编译过程中，使得 TypeScript 能够理解并提供这些环境中的类型信息 */
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    /* 这会跳过所有声明文件（.d.ts 文件）的类型检查，可以加快编译速度 */
+    "skipLibCheck": true,
+
+    /* 这指定了 TypeScript 应该使用 Node.js 风格的模块解析机制 */
+    "moduleResolution": "node",
+    /* 允许从 .ts 文件中导入 .js 文件 */
+    "allowImportingTsExtensions": true,
+    /* 允许你从 .json 文件中导入数据 */
+    "resolveJsonModule": true,
+    /* 确保每个文件可以单独编译（与 Babel 兼容性相关） */
+    "isolatedModules": true,
+    /* TypeScript 只进行类型检查，不输出文件。这在使用 Babel 或其他 JavaScript 工具链时很有用 */
+    "noEmit": true,
+
+    /* 启用所有严格的类型检查选项，可以帮助你写出更健壮的代码 */
+    "strict": true,
+    /* 报告未使用的局部变量，有助于保持代码的清洁和维护性 */
+    "noUnusedLocals": true,
+    /* 报告未使用的函数参数，有助于保持代码的清洁和维护性 */
+    "noUnusedParameters": true,
+    /* 启用严格空检查，这会帮助你避免空值和空引用 */
+    "noFallthroughCasesInSwitch": true
+  },
+  "include": ["src"]
+}
